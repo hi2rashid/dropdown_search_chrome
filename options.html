@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head><title>Drop Down Search - Options</title></head>
+<body>
+<div class="container">
+    <section>
+      <h2>Drop Down Search - Options</h2>
+      <p>To automatically convert all drop downs to include a search box, enter the URL in the text box below and add it to the list. This will enable the drop down search option for all drop downs automatically on page load. Sub domains will also be included.</p>
+      <ul class="input-list style-1 clearfix">
+        <li>
+          <input type="text" id="white_list_url" placeholder="URL should start with http:// or https://">
+        </li>
+        <li>
+          <button class="green" id="save">Add</button>
+        </li>
+      </ul>
+    </section>
+
+    <h2 id="status"></h2>
+
+    <h3>List of URLs enabled for Drop Down Search</h3>
+    <div id="white_list_url_cont"></div>
+</div>
+<script src="jquery.min.js"></script>
+<script src="options.js"></script>
+<style>
+  ul {
+    list-style-type: none;
+  }
+  input[type="text"] {
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 18px;
+    box-shadow: none;
+    border-radius: none;
+  }
+  input[type="text"]:focus {
+    outline: none;
+  }
+  .style-1 input[type="text"] {
+    padding: 10px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+  }
+  .style-1 input[type="text"]:focus,
+  .style-1 input[type="text"].focus {
+    border: solid 1px #707070;
+    box-shadow: 0 0 5px 1px #969696;
+  }
+button {
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.green{
+  background-color: #4CAF50; /* Green */
+}
+.red{
+  background-color: #ff5c33; /* Green */
+}
+
+body {
+  text-align: center;
+ }
+
+.container {
+  text-align: left;
+  width: 800px;
+  margin: 0 auto;
+}
+</style>
+</body>
+</html>
